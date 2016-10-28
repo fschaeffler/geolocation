@@ -4,7 +4,15 @@ Add it to your [Meteor](http://meteor.com) app with `meteor add mdg:geolocation`
 
 ## API Documentation
 
-There are currently no options to set. Every method is reactive using [Tracker](http://docs.meteor.com/#tracker), and will automatically update with new location data from the device if pass isWatching parameters is true.
+There are currently no options to set. Some methods are reactive using [Tracker](http://docs.meteor.com/#tracker), and will automatically update with new location data from the device if pass isWatching parameters is true.
+
+### Geolocation.setOptions()
+
+Set options for Geolocation before is used (includes: enableHighAccuracy, maximumAge, timeout)
+
+### Geolocation.error()
+
+Returns the [position error](https://developer.mozilla.org/en-US/docs/Web/API/PositionError) that is currently preventing position updates.
 
 ### Geolocation.error()
 
