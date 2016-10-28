@@ -6,7 +6,7 @@ Add it to your [Meteor](http://meteor.com) app with `meteor add mdg:geolocation`
 
 There are currently no options to set. Some methods are reactive using [Tracker](http://docs.meteor.com/#tracker), and will automatically update with new location data from the device if pass isWatching parameters is true.
 
-### Geolocation.setOptions()
+### Geolocation.setOptions(options)
 
 Set options for Geolocation before is used (includes: enableHighAccuracy, maximumAge, timeout)
 
