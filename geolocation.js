@@ -23,7 +23,6 @@ var onError = function (newError) {
 
 var onPosition = function (newLocation) {
   location.set(newLocation);
-  console.log(location.get());
   error.set(null);
 };
 
@@ -81,10 +80,8 @@ Geolocation = {
    */
   currentLocation: function (isWatching) {
     if (isWatching) {
-      console.log("run watching");
       startWatchingPosition();
     } else {
-      console.log("run current");
       stopWatchingPosition();
       getCurrentPosition();
     }
@@ -98,7 +95,6 @@ Geolocation = {
    * or null if no position is available.
    */
   latLng: function (isWatching) {
-
     var loc = Geolocation.currentLocation(isWatching);
 
     if (loc) {
