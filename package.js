@@ -1,8 +1,8 @@
 Package.describe({
-	name: 'phund:geolocation',
+	name: 'fschaeffler:geolocation',
 	version: '1.0.2',
 	summary: 'Provides geolocation on desktop and mobile. Have optional for reactive',
-	git: 'https://github.com/phund/geolocation.git',
+	git: 'https://github.com/fschaeffler/geolocation.git',
 	documentation: 'README.md'
 });
 
